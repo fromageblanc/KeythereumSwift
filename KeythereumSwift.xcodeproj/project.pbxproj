@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B60940581FD98C9C003D3057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60940571FD98C9C003D3057 /* AppDelegate.swift */; };
+		B609405A1FD98C9C003D3057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60940591FD98C9C003D3057 /* ViewController.swift */; };
+		B609405D1FD98C9C003D3057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B609405B1FD98C9C003D3057 /* Main.storyboard */; };
+		B609405F1FD98C9C003D3057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B609405E1FD98C9C003D3057 /* Assets.xcassets */; };
+		B60940621FD98C9C003D3057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60940601FD98C9C003D3057 /* LaunchScreen.storyboard */; };
+		B609406D1FD98C9C003D3057 /* KeythereumSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B609406C1FD98C9C003D3057 /* KeythereumSwiftTests.swift */; };
+		B60940781FD98C9C003D3057 /* KeythereumSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60940771FD98C9C003D3057 /* KeythereumSwiftUITests.swift */; };
+		B609408A1FD98D08003D3057 /* keythereum.html in Resources */ = {isa = PBXBuildFile; fileRef = B60940871FD98D08003D3057 /* keythereum.html */; };
+		B609408B1FD98D08003D3057 /* keythereum.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B60940881FD98D08003D3057 /* keythereum.min.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B60940691FD98C9C003D3057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B609404C1FD98C9C003D3057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60940531FD98C9C003D3057;
+			remoteInfo = KeythereumSwift;
+		};
+		B60940741FD98C9C003D3057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B609404C1FD98C9C003D3057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60940531FD98C9C003D3057;
+			remoteInfo = KeythereumSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B60940541FD98C9C003D3057 /* KeythereumSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeythereumSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60940571FD98C9C003D3057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B60940591FD98C9C003D3057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B609405C1FD98C9C003D3057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B609405E1FD98C9C003D3057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B60940611FD98C9C003D3057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B60940631FD98C9C003D3057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60940681FD98C9C003D3057 /* KeythereumSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeythereumSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B609406C1FD98C9C003D3057 /* KeythereumSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeythereumSwiftTests.swift; sourceTree = "<group>"; };
+		B609406E1FD98C9C003D3057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60940731FD98C9C003D3057 /* KeythereumSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeythereumSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60940771FD98C9C003D3057 /* KeythereumSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeythereumSwiftUITests.swift; sourceTree = "<group>"; };
+		B60940791FD98C9C003D3057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60940871FD98D08003D3057 /* keythereum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = keythereum.html; sourceTree = "<group>"; };
+		B60940881FD98D08003D3057 /* keythereum.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = keythereum.min.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B60940511FD98C9C003D3057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60940651FD98C9C003D3057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60940701FD98C9C003D3057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B609404B1FD98C9C003D3057 = {
+			isa = PBXGroup;
+			children = (
+				B60940851FD98D08003D3057 /* keythereum */,
+				B60940561FD98C9C003D3057 /* KeythereumSwift */,
+				B609406B1FD98C9C003D3057 /* KeythereumSwiftTests */,
+				B60940761FD98C9C003D3057 /* KeythereumSwiftUITests */,
+				B60940551FD98C9C003D3057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B60940551FD98C9C003D3057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B60940541FD98C9C003D3057 /* KeythereumSwift.app */,
+				B60940681FD98C9C003D3057 /* KeythereumSwiftTests.xctest */,
+				B60940731FD98C9C003D3057 /* KeythereumSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B60940561FD98C9C003D3057 /* KeythereumSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B60940571FD98C9C003D3057 /* AppDelegate.swift */,
+				B60940591FD98C9C003D3057 /* ViewController.swift */,
+				B609405B1FD98C9C003D3057 /* Main.storyboard */,
+				B609405E1FD98C9C003D3057 /* Assets.xcassets */,
+				B60940601FD98C9C003D3057 /* LaunchScreen.storyboard */,
+				B60940631FD98C9C003D3057 /* Info.plist */,
+			);
+			path = KeythereumSwift;
+			sourceTree = "<group>";
+		};
+		B609406B1FD98C9C003D3057 /* KeythereumSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B609406C1FD98C9C003D3057 /* KeythereumSwiftTests.swift */,
+				B609406E1FD98C9C003D3057 /* Info.plist */,
+			);
+			path = KeythereumSwiftTests;
+			sourceTree = "<group>";
+		};
+		B60940761FD98C9C003D3057 /* KeythereumSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B60940771FD98C9C003D3057 /* KeythereumSwiftUITests.swift */,
+				B60940791FD98C9C003D3057 /* Info.plist */,
+			);
+			path = KeythereumSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B60940851FD98D08003D3057 /* keythereum */ = {
+			isa = PBXGroup;
+			children = (
+				B60940871FD98D08003D3057 /* keythereum.html */,
+				B60940881FD98D08003D3057 /* keythereum.min.js */,
+			);
+			path = keythereum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B60940531FD98C9C003D3057 /* KeythereumSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B609407C1FD98C9C003D3057 /* Build configuration list for PBXNativeTarget "KeythereumSwift" */;
+			buildPhases = (
+				B60940501FD98C9C003D3057 /* Sources */,
+				B60940511FD98C9C003D3057 /* Frameworks */,
+				B60940521FD98C9C003D3057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeythereumSwift;
+			productName = KeythereumSwift;
+			productReference = B60940541FD98C9C003D3057 /* KeythereumSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B60940671FD98C9C003D3057 /* KeythereumSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B609407F1FD98C9C003D3057 /* Build configuration list for PBXNativeTarget "KeythereumSwiftTests" */;
+			buildPhases = (
+				B60940641FD98C9C003D3057 /* Sources */,
+				B60940651FD98C9C003D3057 /* Frameworks */,
+				B60940661FD98C9C003D3057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B609406A1FD98C9C003D3057 /* PBXTargetDependency */,
+			);
+			name = KeythereumSwiftTests;
+			productName = KeythereumSwiftTests;
+			productReference = B60940681FD98C9C003D3057 /* KeythereumSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B60940721FD98C9C003D3057 /* KeythereumSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60940821FD98C9C003D3057 /* Build configuration list for PBXNativeTarget "KeythereumSwiftUITests" */;
+			buildPhases = (
+				B609406F1FD98C9C003D3057 /* Sources */,
+				B60940701FD98C9C003D3057 /* Frameworks */,
+				B60940711FD98C9C003D3057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60940751FD98C9C003D3057 /* PBXTargetDependency */,
+			);
+			name = KeythereumSwiftUITests;
+			productName = KeythereumSwiftUITests;
+			productReference = B60940731FD98C9C003D3057 /* KeythereumSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B609404C1FD98C9C003D3057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Seiji.Y.;
+				TargetAttributes = {
+					B60940531FD98C9C003D3057 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					B60940671FD98C9C003D3057 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B60940531FD98C9C003D3057;
+					};
+					B60940721FD98C9C003D3057 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B60940531FD98C9C003D3057;
+					};
+				};
+			};
+			buildConfigurationList = B609404F1FD98C9C003D3057 /* Build configuration list for PBXProject "KeythereumSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B609404B1FD98C9C003D3057;
+			productRefGroup = B60940551FD98C9C003D3057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B60940531FD98C9C003D3057 /* KeythereumSwift */,
+				B60940671FD98C9C003D3057 /* KeythereumSwiftTests */,
+				B60940721FD98C9C003D3057 /* KeythereumSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B60940521FD98C9C003D3057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60940621FD98C9C003D3057 /* LaunchScreen.storyboard in Resources */,
+				B609405F1FD98C9C003D3057 /* Assets.xcassets in Resources */,
+				B609405D1FD98C9C003D3057 /* Main.storyboard in Resources */,
+				B609408A1FD98D08003D3057 /* keythereum.html in Resources */,
+				B609408B1FD98D08003D3057 /* keythereum.min.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60940661FD98C9C003D3057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60940711FD98C9C003D3057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B60940501FD98C9C003D3057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B609405A1FD98C9C003D3057 /* ViewController.swift in Sources */,
+				B60940581FD98C9C003D3057 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60940641FD98C9C003D3057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B609406D1FD98C9C003D3057 /* KeythereumSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B609406F1FD98C9C003D3057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60940781FD98C9C003D3057 /* KeythereumSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B609406A1FD98C9C003D3057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60940531FD98C9C003D3057 /* KeythereumSwift */;
+			targetProxy = B60940691FD98C9C003D3057 /* PBXContainerItemProxy */;
+		};
+		B60940751FD98C9C003D3057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60940531FD98C9C003D3057 /* KeythereumSwift */;
+			targetProxy = B60940741FD98C9C003D3057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B609405B1FD98C9C003D3057 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B609405C1FD98C9C003D3057 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B60940601FD98C9C003D3057 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B60940611FD98C9C003D3057 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B609407A1FD98C9C003D3057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B609407B1FD98C9C003D3057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B609407D1FD98C9C003D3057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62HF9345JF;
+				INFOPLIST_FILE = KeythereumSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fromageblanc.KeythereumSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B609407E1FD98C9C003D3057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62HF9345JF;
+				INFOPLIST_FILE = KeythereumSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fromageblanc.KeythereumSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B60940801FD98C9C003D3057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62HF9345JF;
+				INFOPLIST_FILE = KeythereumSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fromageblanc.KeythereumSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeythereumSwift.app/KeythereumSwift";
+			};
+			name = Debug;
+		};
+		B60940811FD98C9C003D3057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62HF9345JF;
+				INFOPLIST_FILE = KeythereumSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fromageblanc.KeythereumSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeythereumSwift.app/KeythereumSwift";
+			};
+			name = Release;
+		};
+		B60940831FD98C9C003D3057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62HF9345JF;
+				INFOPLIST_FILE = KeythereumSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fromageblanc.KeythereumSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeythereumSwift;
+			};
+			name = Debug;
+		};
+		B60940841FD98C9C003D3057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62HF9345JF;
+				INFOPLIST_FILE = KeythereumSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fromageblanc.KeythereumSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeythereumSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B609404F1FD98C9C003D3057 /* Build configuration list for PBXProject "KeythereumSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B609407A1FD98C9C003D3057 /* Debug */,
+				B609407B1FD98C9C003D3057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B609407C1FD98C9C003D3057 /* Build configuration list for PBXNativeTarget "KeythereumSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B609407D1FD98C9C003D3057 /* Debug */,
+				B609407E1FD98C9C003D3057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B609407F1FD98C9C003D3057 /* Build configuration list for PBXNativeTarget "KeythereumSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60940801FD98C9C003D3057 /* Debug */,
+				B60940811FD98C9C003D3057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B60940821FD98C9C003D3057 /* Build configuration list for PBXNativeTarget "KeythereumSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60940831FD98C9C003D3057 /* Debug */,
+				B60940841FD98C9C003D3057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B609404C1FD98C9C003D3057 /* Project object */;
+}
