@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     // ダミーのWebview. JS実行用
     var webView = UIWebView()
 
+    // テキストフィールド外をタップするとキーボードを隠す
+    @IBAction func hiddenKeyboard(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+
     @IBAction func extractPrivateKey(_ sender:UIButton) {
         
         // javascript:privateKey()のパラメタ

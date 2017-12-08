@@ -28,6 +28,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wTp-XS-mmB">
                                 <rect key="frame" x="16" y="84" width="343" height="411.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -64,6 +65,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89410220974385712" green="0.9501651543761982" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="AAh-fc-saf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="010-Gl-8eu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wTp-XS-mmB" secondAttribute="trailing" constant="16" id="1Cv-eo-xim"/>
@@ -83,6 +85,9 @@
                             <constraint firstItem="a8h-kA-eKY" firstAttribute="top" secondItem="AAh-fc-saf" secondAttribute="bottom" constant="21.5" id="ysc-oj-EDU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="FYc-J2-kEg" appends="YES" id="UaH-2P-FBz"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="keyStoreText" destination="wTp-XS-mmB" id="IwK-fX-zeu"/>
@@ -91,6 +96,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FYc-J2-kEg">
+                    <connections>
+                        <action selector="hiddenKeyboard:" destination="BYZ-38-t0r" id="8eA-zh-VLk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116" y="118.29085457271366"/>
         </scene>
