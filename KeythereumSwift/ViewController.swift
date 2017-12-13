@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
@@ -15,8 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var secretKeyLabel:UILabel!
     
     // ダミーのWebview. JS実行用
-    var webView = UIWebView()
-
+    //var webView = UIWebView()
+    var webView = WKWebView()
     // テキストフィールド外をタップするとキーボードを隠す
     @IBAction func hiddenKeyboard(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
@@ -27,7 +28,6 @@ class ViewController: UIViewController {
         // javascript:privateKey()のパラメタ
         var param1:String = ""
         let param2 = passwordField.text!
-
         // keyStoreTextの複数行を１行にする
         keyStoreText.text?.enumerateLines { (line, stop) -> () in
             param1 += line.trimmingCharacters(in:.whitespacesAndNewlines)
@@ -36,8 +36,15 @@ class ViewController: UIViewController {
         // js評価文字列作成
         let jsEvalStr = "privateKey('" + param1 + "','" + param2 + "');"
         
-        let privateKey = webView.stringByEvaluatingJavaScript(from:jsEvalStr)
-        secretKeyLabel.text = (privateKey == "") ? "fail to generate secret key" : privateKey
+        //let privateKey = webView.stringByEvaluatingJavaScript(from:jsEvalStr)
+        webView.evaluateJavaScript(jsEvalStr, completionHandler: {(res,error) in
+            guard let pk = res else {
+                self.secretKeyLabel.text = "fail to decode private key"
+                return
+            }
+            
+            self.secretKeyLabel.text = pk as? String
+        })
 
     }
 
@@ -46,8 +53,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // ローカルのkeythereum.htmlをロード
-        let html = Bundle.main.path(forResource: "keythereum", ofType: "html")
-        webView.loadRequest(URLRequest(url: URL(string: html!)!))
+//        let html = Bundle.main.path(forResource: "keythereum", ofType: "html")
+//        webView.loadRequest(URLRequest(url: URL(string: html!)!))
+        
+        let url = Bundle.main.url(forResource: "keythereum", withExtension: ".html")!
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
         
         // パスワードフィールドを伏せ字モードに
         passwordField.isSecureTextEntry = true
